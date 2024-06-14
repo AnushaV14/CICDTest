@@ -1,4 +1,5 @@
 pipeline {
+env.PATH = "C:/Users/anusha_vujjini/eclipse/apache-maven-3.9.6/bin;c:\\Windows\\System32"
     agent any
     stages {
 	stage('Checkout') {
@@ -7,7 +8,7 @@ pipeline {
         }
     }
     stage('Build') {
-        steps {
+        steps {            
             bat label: '', script: 'mvn compile'
         }
     }
