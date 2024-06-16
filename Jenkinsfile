@@ -7,9 +7,8 @@ pipeline {
         }
     }
     stage('Build') {
-        steps {
-            
-            script: 'mvn compile'
+        steps {            
+            bat label: '', script: 'mvn compile'
         }
     }
     stage('Archive') {
