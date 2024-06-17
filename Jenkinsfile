@@ -30,12 +30,12 @@ pipeline {
 
     stage('archive') {
       steps {	
-        archiveArtifacts artifacts: 'test-output/*.war'	
+        archiveArtifacts artifacts: 'target/*.jar'	
       }
     }
     stage('deploy') {
 	steps{
-	   deploy adapters: [tomcat9(credentialsId: '2b80f3f4-6843-4733-9807-47b3d11d8964', path: '', url: 'http://localhost:9999/')], contextPath: 'test', onFailure: false, war: '**/*.war'
+	   deploy adapters: [tomcat9(credentialsId: '2b80f3f4-6843-4733-9807-47b3d11d8964', path: '', url: 'http://localhost:9999/')], contextPath: 'test', onFailure: false, war: 'target/*.jar'
 	}
     }
 
