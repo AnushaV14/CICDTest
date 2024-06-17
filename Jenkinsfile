@@ -30,8 +30,9 @@ pipeline {
 
     stage('archive') {
       steps {
-	step($class: 'JUnitResultsArchiver', TestResults: 'test-output/*.xml')
-        archiveArtifacts '**/*.war'	
+	
+        archiveArtifacts artifacts: '**/*.war'
+	
       }
     }
     stage('deploy') {
