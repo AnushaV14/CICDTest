@@ -30,7 +30,7 @@ pipeline {
 
     stage('archive') {
       steps {	
-        archiveArtifacts artifacts: 'test-output/junitreports/*.war'	
+        archiveArtifacts artifacts: 'test-output/*.war'	
       }
     }
     stage('deploy') {
