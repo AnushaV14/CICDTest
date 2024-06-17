@@ -29,10 +29,8 @@ pipeline {
     }
 
     stage('archive') {
-      steps {
-	
-        archiveArtifacts artifacts: '**/*.war'
-	
+      steps {	
+        archiveArtifacts artifacts: 'test-output/junitreports/*.war'	
       }
     }
     stage('deploy') {
