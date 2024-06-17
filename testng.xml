@@ -3,7 +3,7 @@
 <suite name="Practice Suite" parallel="true">
 	<test name="Test Basic One" thread-count="3">
 		<classes>
-			<class name="com.epam.test.Test" />
+			<class name="com.epam.test.TestOne" />
 		</classes>
 	</test>
 </suite> 
