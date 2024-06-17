@@ -31,6 +31,7 @@ pipeline {
     stage('archive') {
       steps {
         archiveArtifacts '**/*.war'
+	step($class: 'JUnitResultsArchiver', TestResults: '**/*.jar')
       }
     }
     stage('deploy') {

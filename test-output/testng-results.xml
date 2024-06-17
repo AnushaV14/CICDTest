@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="0" passed="0" failed="0" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-17T09:25:26Z" name="Practice Suite" finished-at="2024-06-17T09:25:26Z" duration-ms="4">
+  <suite started-at="2024-06-17T10:23:51Z" name="Practice Suite" finished-at="2024-06-17T10:23:51Z" duration-ms="21">
     <groups>
     </groups>
-    <test started-at="2024-06-17T09:25:26Z" name="Test Basic One" finished-at="2024-06-17T09:25:26Z" duration-ms="4">
+    <test started-at="2024-06-17T10:23:51Z" name="Test Basic One" finished-at="2024-06-17T10:23:51Z" duration-ms="21">
+      <class name="com.epam.test.TestOne">
+        <test-method signature="testM()[pri:0, instance:com.epam.test.TestOne@55f616cf]" started-at="2024-06-17T15:53:51Z" name="testM" finished-at="2024-06-17T15:53:51Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testM -->
+      </class> <!-- com.epam.test.TestOne -->
     </test> <!-- Test Basic One -->
   </suite> <!-- Practice Suite -->
 </testng-results>
