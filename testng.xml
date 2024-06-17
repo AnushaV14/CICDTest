@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite" parallel="true">
+	<test name="Test Basic One" thread-count="3">
+		<classes>
+			<class name="com.epam.test.Test" />
+		</classes>
+	</test>
+</suite> 
