@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.epam</groupId>
-	<artifactId>EPAM-CICDTEST</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>EPAM-CICD_TEST</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>EPAM-CICDTEST</name>
+	<name>EPAM-CICD_TEST</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
