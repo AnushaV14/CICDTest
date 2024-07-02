@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="true" name="Failed suite [Practice Suite]">
+  <test parallel="true" name="Test Basic One(failed)">
+    <classes>
+      <class name="com.epam.test.TestOne">
+        <methods>
+          <include name="testSquareRootWithNegativeVal"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="setUpMethod"/>
+          <include name="tearDown"/>
+          <include name="testAddition" invocation-numbers="1"/>
+          <include name="testDivideByZero"/>
+        </methods>
+      </class> <!-- com.epam.test.TestOne -->
+    </classes>
+  </test> <!-- Test Basic One(failed) -->
+</suite> <!-- Failed suite [Practice Suite] -->

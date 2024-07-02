@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test Basic One</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 17 15:53:51 IST 2024</td>
+<td>Started on:</td><td>Tue Jul 02 11:36:36 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (21 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (452 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,132 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.epam.test.TestOne.testAddition()'><b>testAddition</b><br>Test class: com.epam.test.TestOne<br>Parameters: 10, 4, 6</td>
+<td><div><pre>java.lang.AssertionError: Addition failed expected [6] but found [14]
+	at com.epam.test.TestOne.testAddition(TestOne.java:63)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace462043412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace462043412'><pre>java.lang.AssertionError: Addition failed expected [6] but found [14]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at com.epam.test.TestOne.testAddition(TestOne.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>com.epam.test.TestOne@59d016c9</td></tr>
+<tr>
+<td title='com.epam.test.TestOne.testDivideByZero()'><b>testDivideByZero</b><br>Test class: com.epam.test.TestOne</td>
+<td><div><pre>org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got java.lang.ArithmeticException: / by zero
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Expected exception java.lang.IllegalArgumentException but got java.lang.ArithmeticException: / by zero
+	... 5 more
+Caused by: java.lang.ArithmeticException: / by zero
+	at com.epam.test.TestOne.testDivideByZero(TestOne.java:123)
+	... 7 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1402798500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1402798500'><pre>org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got java.lang.ArithmeticException: / by zero
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1245)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got java.lang.ArithmeticException: / by zero
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	... 5 more
+Caused by: java.lang.ArithmeticException: / by zero
+	at com.epam.test.TestOne.testDivideByZero(TestOne.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	... 7 more
+</pre></div></td>
+<td>0</td>
+<td>com.epam.test.TestOne@59d016c9</td></tr>
+<tr>
+<td title='com.epam.test.TestOne.testSquareRootWithNegativeVal()'><b>testSquareRootWithNegativeVal</b><br>Test class: com.epam.test.TestOne</td>
+<td><div><pre>org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got java.lang.AssertionError: expected [NaN] but found [-7]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Expected exception java.lang.IllegalArgumentException but got java.lang.AssertionError: expected [NaN] but found [-7]
+	... 5 more
+Caused by: java.lang.AssertionError: expected [NaN] but found [-7]
+	at com.epam.test.TestOne.testSquareRootWithNegativeVal(TestOne.java:145)
+	... 7 more
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1324858434", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1324858434'><pre>org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got java.lang.AssertionError: expected [NaN] but found [-7]
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1245)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.testng.TestException: 
+Expected exception java.lang.IllegalArgumentException but got java.lang.AssertionError: expected [NaN] but found [-7]
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1497)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:754)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	... 5 more
+Caused by: java.lang.AssertionError: expected [NaN] but found [-7]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.epam.test.TestOne.testSquareRootWithNegativeVal(TestOne.java:145)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	... 7 more
+</pre></div></td>
+<td>0</td>
+<td>com.epam.test.TestOne@59d016c9</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +201,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.epam.test.TestOne.testM()'><b>testM</b><br>Test class: com.epam.test.TestOne</td>
+<td title='com.epam.test.TestOne.testAdd()'><b>testAdd</b><br>Test class: com.epam.test.TestOne</td>
 <td></td>
 <td>0</td>
-<td>com.epam.test.TestOne@55f616cf</td></tr>
+<td>com.epam.test.TestOne@59d016c9</td></tr>
+<tr>
+<td title='com.epam.test.TestOne.testAddition()'><b>testAddition</b><br>Test class: com.epam.test.TestOne<br>Parameters: 5, 3, 8</td>
+<td></td>
+<td>0</td>
+<td>com.epam.test.TestOne@59d016c9</td></tr>
+<tr>
+<td title='com.epam.test.TestOne.testDivide()'><b>testDivide</b><br>Test class: com.epam.test.TestOne</td>
+<td></td>
+<td>0</td>
+<td>com.epam.test.TestOne@59d016c9</td></tr>
+<tr>
+<td title='com.epam.test.TestOne.testMultiply()'><b>testMultiply</b><br>Test class: com.epam.test.TestOne</td>
+<td></td>
+<td>0</td>
+<td>com.epam.test.TestOne@59d016c9</td></tr>
+<tr>
+<td title='com.epam.test.TestOne.testSquareRoot()'><b>testSquareRoot</b><br>Test class: com.epam.test.TestOne</td>
+<td></td>
+<td>0</td>
+<td>com.epam.test.TestOne@59d016c9</td></tr>
+<tr>
+<td title='com.epam.test.TestOne.testSubtract()'><b>testSubtract</b><br>Test class: com.epam.test.TestOne</td>
+<td></td>
+<td>0</td>
+<td>com.epam.test.TestOne@59d016c9</td></tr>
 </table><p>
 </body>
 </html>
