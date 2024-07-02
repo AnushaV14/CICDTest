@@ -17,6 +17,7 @@
 		<maven.surefire.plugin.version>3.2.3</maven.surefire.plugin.version>
 		<maven.compiler.source.version>17</maven.compiler.source.version>
 		<maven.compiler.target.version>17</maven.compiler.target.version>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
 	</properties>
 	<profiles>
 		<profile>
