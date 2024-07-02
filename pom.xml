@@ -17,54 +17,14 @@
 		<maven.surefire.plugin.version>3.2.3</maven.surefire.plugin.version>
 		<maven.compiler.source.version>17</maven.compiler.source.version>
 		<maven.compiler.target.version>17</maven.compiler.target.version>
-		<failOnMissingWebXml>false</failOnMissingWebXml>
+		
 	</properties>
-	<profiles>
-		<profile>
-			<id>smoke-test</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<version>2.22.2</version>
-						<configuration>
-							<includes>
-								<include>com.epam.test.TestOne</include>
-							</includes>
-							
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>regression-test</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<version>2.22.2</version>
-						<configuration>
-							<includes>
-								<include>com.epam.test.TestOne</include>
-							</includes>
-							
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
 	<build>
 		<resources>
 			<resource>
 				<directory>resources</directory>
 			</resource>
 		</resources>
-	</build>
-	<reporting>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -94,7 +54,8 @@
 			</plugin>
 
 		</plugins>
-	</reporting>
+	</build>
+	
 
 	<dependencies>
 		<dependency>
