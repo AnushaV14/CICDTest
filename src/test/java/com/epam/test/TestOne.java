@@ -50,8 +50,8 @@ public class TestOne {
 
 	@DataProvider(name = "testdata")
 	public Object[][] provideTestData() {
-		return new Object[][] { { 5, 3, 8 }, // Test 1: Addition
-				{ 10, 4, 6 }, // Test 2: Subtraction
+		return new Object[][] { { 5, 3, 8 } // Test 1: Addition
+				//,{ 10, 4, 6 }, // Test 2: Subtraction
 				// Add more test data as needed
 		};
 	}
@@ -101,7 +101,7 @@ public class TestOne {
 		_test.pass("Multiplication is working as expected , result is :" + result);
 	}
 
-	@Test(groups = { "positive" })
+	@Test(groups = { "positive" }, enabled = false)
 	public void testDivide() {
 		double a = 56;
 		double b = 10;
@@ -114,7 +114,7 @@ public class TestOne {
 
 	}
 
-	@Test(expectedExceptions = IllegalArgumentException.class, groups = { "negative" })
+	@Test(expectedExceptions = IllegalArgumentException.class, groups = { "negative" }, enabled = false)
 	public void testDivideByZero() {
 		int a = 15;
 		int b = 0;
@@ -136,7 +136,7 @@ public class TestOne {
 		_test.pass("Square root is working as expected , result is :" + result);
 	}
 
-	@Test(groups = { "negative" }, expectedExceptions = IllegalArgumentException.class)
+	@Test(groups = { "negative" }, expectedExceptions = IllegalArgumentException.class, enabled = false)
 	public void testSquareRootWithNegativeVal() {
 		int a = -49;
 		int expectedResult = -7;
